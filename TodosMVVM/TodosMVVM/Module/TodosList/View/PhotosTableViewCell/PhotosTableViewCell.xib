@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="434" id="KGk-i7-Jjw" customClass="PhotosTableViewCell" customModule="TodosMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="434"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-cP-g2c">
+                        <rect key="frame" x="16" y="47" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovy-dD-C1H">
+                        <rect key="frame" x="16" y="76" width="272" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jam_tangan4" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-o2-TcE">
+                        <rect key="frame" x="0.0" y="114" width="320" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qdf-o2-TcE" secondAttribute="height" multiplier="600:600" id="aWK-WN-QbG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="albumId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-E3-52W">
+                        <rect key="frame" x="16" y="18" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1sF-E3-52W" secondAttribute="trailing" constant="16" id="9SO-uC-nVo"/>
+                    <constraint firstItem="Lao-cP-g2c" firstAttribute="top" secondItem="1sF-E3-52W" secondAttribute="bottom" constant="8" symbolic="YES" id="B8F-XR-am2"/>
+                    <constraint firstAttribute="bottom" secondItem="qdf-o2-TcE" secondAttribute="bottom" id="Fxx-xr-lK9"/>
+                    <constraint firstItem="1sF-E3-52W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Jxa-eV-Nhu"/>
+                    <constraint firstItem="qdf-o2-TcE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="JyO-h6-9ua"/>
+                    <constraint firstItem="Ovy-dD-C1H" firstAttribute="top" secondItem="Lao-cP-g2c" secondAttribute="bottom" constant="8" symbolic="YES" id="Pg5-hC-wvm"/>
+                    <constraint firstItem="Ovy-dD-C1H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZyH-Sy-f9j"/>
+                    <constraint firstItem="Lao-cP-g2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dmJ-dW-tZy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ovy-dD-C1H" secondAttribute="trailing" constant="16" id="hlu-kP-GTd"/>
+                    <constraint firstAttribute="trailing" secondItem="Lao-cP-g2c" secondAttribute="trailing" constant="16" id="npE-9M-x0W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qdf-o2-TcE" secondAttribute="trailing" constant="-16" id="ptO-2K-tEB"/>
+                    <constraint firstItem="qdf-o2-TcE" firstAttribute="top" secondItem="Ovy-dD-C1H" secondAttribute="bottom" constant="17" id="rg3-GY-ecb"/>
+                    <constraint firstItem="1sF-E3-52W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yGS-dk-6G2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumIdLabel" destination="1sF-E3-52W" id="dgp-BU-3Kj"/>
+                <outlet property="idLabel" destination="Lao-cP-g2c" id="KSt-4r-jhZ"/>
+                <outlet property="photo" destination="qdf-o2-TcE" id="uOX-JT-hvk"/>
+                <outlet property="titleLabel" destination="Ovy-dD-C1H" id="oBm-k2-4hi"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="126.54028436018957"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jam_tangan4" width="225" height="225"/>
+    </resources>
+</document>

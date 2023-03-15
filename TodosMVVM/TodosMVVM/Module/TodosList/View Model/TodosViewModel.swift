@@ -18,8 +18,11 @@ class TodosViewModel: TodosViewProtocol {
     private var apiService: ApiServiceProtocol?
     var urlString: String
     var data: [Todos]?
+    var photoDatas: [PhotosModel]?
     
     var bindTodosData: (([Todos]?) -> Void)?
+    var bindPhotosData: (([PhotosModel]?) -> Void)?
+    
     
 //    init(urlString: String) {
 //        self.urlString = urlString
@@ -55,6 +58,20 @@ class TodosViewModel: TodosViewProtocol {
             }
         })
     }
+    
+    func fetchDataPhotos() {
+        self.apiService?.callApi(model: [PhotosModel].self, completion: { response in
+            switch response {
+            case .success(let success):
+                self.bindPhotosData?(success)
+            case .failure(_):
+                self.bindPhotosData?(nil)
+            }
+        })
+        
+        
+    }
+    
     
     func numberOfRowsInSection() -> Int {
         return self.data?.count ?? 0
