@@ -14,7 +14,7 @@ protocol ApiServiceTodosProtocol {
 
 protocol ApiServiceProtocol{
     mutating func get(url: URL)
-        func callApi<T: Codable>(model: T.Type, completion: @escaping (Result<T, Error>) -> Void)
+    func callApi<T: Codable>(model: T.Type, completion: @escaping (Result<T, Error>) -> Void)
 
 }
 
